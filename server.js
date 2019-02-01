@@ -8,6 +8,8 @@ const router = new Router();
 
 router.get('/', (request, response) => {
   // A good place to start!
+  response.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+  response.write("Hello, World!")
   response.end();
 });
 
